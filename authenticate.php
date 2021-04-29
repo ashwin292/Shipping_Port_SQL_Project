@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $user_id = $_POST["user_id"];
         $email = $_POST["email"];
 
-        $sql = "SELECT * from employee where user_id = '$user_id'";
+        $sql = "SELECT * from 180b_users where user_id = '$user_id'";
         $result = $conn->query($sql);
         $row = $result->fetch_assoc();
         

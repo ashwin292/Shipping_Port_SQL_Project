@@ -29,7 +29,7 @@ if(isset($_POST['update']))
     $password = mysqli_real_escape_string($conn, $_REQUEST['password']);
     $hash = password_hash($password, PASSWORD_DEFAULT);
 
-    $sql = "INSERT INTO employee (user_id, name, email, password) VALUES 
+    $sql = "INSERT INTO 180b_users (user_id, name, email, password) VALUES 
             			('$user_id', '$name', '$email', '$hash')";
             
             if(mysqli_query($conn, $sql))
